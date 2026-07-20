@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.apache.ranger.pulsar.RangerPulsarSystemTest
+-------------------------------------------------------------------------------
+Tests run: 55, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.593 s - in com.apache.ranger.pulsar.RangerPulsarSystemTest

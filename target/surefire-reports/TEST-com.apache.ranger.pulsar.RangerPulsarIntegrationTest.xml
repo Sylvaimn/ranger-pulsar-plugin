@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.1" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="socksProxyHost" value="127.0.0.1"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/test-classes:/Users/kodlien/Documents/ranger-pulsar-plugin/target/classes:/Users/kodlien/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/kodlien/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/kodlien/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/kodlien/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/kodlien/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:"/>
+    <property name="https.proxyPort" value="7890"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/surefire/surefirebooter17279451310008537785.jar /Users/kodlien/Documents/ranger-pulsar-plugin/target/surefire 2026-07-16T20-39-26_364-jvmRun1 surefire2144653675640601135tmp surefire_05238230559509047356tmp"/>
+    <property name="http.nonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local|timestamp.apple.com|*.timestamp.apple.com|sequoia.apple.com|*.sequoia.apple.com|seed-sequoia.siri.apple.com|*.seed-sequoia.siri.apple.com"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/test-classes:/Users/kodlien/Documents/ranger-pulsar-plugin/target/classes:/Users/kodlien/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/kodlien/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/kodlien/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/kodlien/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/kodlien/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/kodlien"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="basedir" value="/Users/kodlien/Documents/ranger-pulsar-plugin"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/surefire/surefirebooter17279451310008537785.jar"/>
+    <property name="user.script" value="Hans"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local|timestamp.apple.com|*.timestamp.apple.com|sequoia.apple.com|*.sequoia.apple.com|seed-sequoia.siri.apple.com|*.seed-sequoia.siri.apple.com"/>
+    <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
+    <property name="user.name" value="kodlien"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/kodlien/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/yt/331j9bm925j4qs7b64r_j1200000gn/T/"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="user.dir" value="/Users/kodlien/Documents/ranger-pulsar-plugin"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="socksProxyPort" value="7890"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/kodlien/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local|timestamp.apple.com|*.timestamp.apple.com|sequoia.apple.com|*.sequoia.apple.com|seed-sequoia.siri.apple.com|*.seed-sequoia.siri.apple.com"/>
+    <property name="http.proxyPort" value="7890"/>
+  </properties>
+  <testcase name="testUnknownUserDenied" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.016">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.530681Z","event":"ACCESS","result":"DENIED","user":"unknown","accessType":"produce","resource":"standalone/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: unknown, groups: [], accessType: produce, resource: standalone/public/default/test-topic
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.531147Z","event":"ACCESS","result":"DENIED","user":"unknown","accessType":"consume","resource":"standalone/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: unknown, groups: [], accessType: consume, resource: standalone/public/default/test-topic
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.531199Z","event":"ACCESS","result":"DENIED","user":"unknown","accessType":"admin","resource":"standalone/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: unknown, groups: [], accessType: admin, resource: standalone/public/default/test-topic
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testProducerConsumerSeparation" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.01">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.546455Z","event":"ACCESS","result":"GRANTED","user":"producer1","accessType":"produce","resource":"standalone/public/default/test-topic"}
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.546539Z","event":"ACCESS","result":"DENIED","user":"producer1","accessType":"consume","resource":"standalone/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: producer1, groups: [], accessType: consume, resource: standalone/public/default/test-topic
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.546590Z","event":"ACCESS","result":"GRANTED","user":"consumer1","accessType":"consume","resource":"standalone/public/default/test-topic"}
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.546625Z","event":"ACCESS","result":"DENIED","user":"consumer1","accessType":"produce","resource":"standalone/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: consumer1, groups: [], accessType: produce, resource: standalone/public/default/test-topic
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testWildcardTopicMatching" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.007">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.560992Z","event":"ACCESS","result":"GRANTED","user":"producer1","accessType":"produce","resource":"standalone/public/default/topic1"}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.561069Z","event":"ACCESS","result":"GRANTED","user":"producer1","accessType":"produce","resource":"standalone/public/default/topic2"}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.561109Z","event":"ACCESS","result":"GRANTED","user":"producer1","accessType":"produce","resource":"standalone/public/default/another-topic"}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testCustomPolicyAddition" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.008">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.568673Z","event":"ACCESS","result":"DENIED","user":"custom-user","accessType":"produce","resource":"standalone/public/custom/custom-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: custom-user, groups: [], accessType: produce, resource: standalone/public/custom/custom-topic
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='custom-3090087338450083', accessType='produce', cluster='standalone', namespace='public/custom', topic='custom-topic', users=[custom-user], groups=[], priority=50}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.569537Z","event":"ACCESS","result":"GRANTED","user":"custom-user","accessType":"produce","resource":"standalone/public/custom/custom-topic"}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testDifferentNamespaceDenied" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.005">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.576855Z","event":"ACCESS","result":"DENIED","user":"producer1","accessType":"produce","resource":"standalone/public/other/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: producer1, groups: [], accessType: produce, resource: standalone/public/other/test-topic
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.576933Z","event":"ACCESS","result":"DENIED","user":"consumer1","accessType":"consume","resource":"standalone/public/other/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: consumer1, groups: [], accessType: consume, resource: standalone/public/other/test-topic
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testDifferentClusterDenied" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.003">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.581819Z","event":"ACCESS","result":"DENIED","user":"admin","accessType":"admin","resource":"other-cluster/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: admin, groups: [], accessType: admin, resource: other-cluster/public/default/test-topic
+[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.581893Z","event":"ACCESS","result":"DENIED","user":"producer1","accessType":"produce","resource":"other-cluster/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: producer1, groups: [], accessType: produce, resource: other-cluster/public/default/test-topic
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testResourceWithAllLevels" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.006">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.587160Z","event":"ACCESS","result":"GRANTED","user":"consumer1","accessType":"consume","resource":"standalone/public/default/test-topic"}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testLookupAccessForAllUsers" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.011">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.600671Z","event":"ACCESS","result":"GRANTED","user":"any-user","accessType":"lookup","resource":"standalone/public/default/test-topic"}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.600825Z","event":"ACCESS","result":"GRANTED","user":"admin","accessType":"lookup","resource":"standalone/public/default/test-topic"}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.600865Z","event":"ACCESS","result":"GRANTED","user":"producer1","accessType":"lookup","resource":"standalone/public/default/test-topic"}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testEmptyParameters" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.007">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Invalid parameters - user: null, accessType: produce, resource: RangerPulsarResource{standalone/public/default/test-topic}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Invalid parameters - user: admin, accessType: null, resource: RangerPulsarResource{standalone/public/default/test-topic}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Invalid parameters - user: admin, accessType: produce, resource: null
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+  <testcase name="testFullPolicyHierarchy" classname="com.apache.ranger.pulsar.RangerPulsarIntegrationTest" time="0.009">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin initialized - config: RangerPulsarConfig{service=pulsar, cluster=standalone, cacheSize=10000, cacheTtl=300s, syncEnabled=true, syncInterval=30s, retryMax=3, retryBackoff=1000ms, adminUrl=http://localhost:6080, httpConnectTimeout=5000ms, httpReadTimeout=10000ms, sslEnabled=false, authEnabled=true, auditEnabled=true, auditMaxQueue=5000}, policies: 4
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher started - interval: 30s, url: http://localhost:6080, retryMax: 3, retryBackoff: 1000ms
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-1', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-2', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-3', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='ranger-mock-policy-4', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=50}
+[ranger-policy-refresher] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - Policy sync completed - fetched 4 policies (hash=5115b69a)
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.619422Z","event":"ACCESS","result":"GRANTED","user":"admin","accessType":"admin","resource":"standalone/public/default/test-topic"}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.619947Z","event":"ACCESS","result":"GRANTED","user":"admin","accessType":"produce","resource":"standalone/public/default/test-topic"}
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:32.619992Z","event":"ACCESS","result":"GRANTED","user":"admin","accessType":"consume","resource":"standalone/public/default/test-topic"}
+[main] INFO com.apache.ranger.pulsar.sync.PolicyRefresher - PolicyRefresher stopped - totalSyncs=1, totalFails=0, totalPolicies=4
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - RangerPulsarPlugin cleaned up, default policies reloaded
+]]></system-err>
+  </testcase>
+</testsuite>

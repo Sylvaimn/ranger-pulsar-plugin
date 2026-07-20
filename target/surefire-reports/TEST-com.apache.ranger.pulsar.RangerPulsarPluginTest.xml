@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.352" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="socksProxyHost" value="127.0.0.1"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/test-classes:/Users/kodlien/Documents/ranger-pulsar-plugin/target/classes:/Users/kodlien/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/kodlien/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/kodlien/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/kodlien/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/kodlien/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:"/>
+    <property name="https.proxyPort" value="7890"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/surefire/surefirebooter17279451310008537785.jar /Users/kodlien/Documents/ranger-pulsar-plugin/target/surefire 2026-07-16T20-39-26_364-jvmRun1 surefire2144653675640601135tmp surefire_05238230559509047356tmp"/>
+    <property name="http.nonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local|timestamp.apple.com|*.timestamp.apple.com|sequoia.apple.com|*.sequoia.apple.com|seed-sequoia.siri.apple.com|*.seed-sequoia.siri.apple.com"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/test-classes:/Users/kodlien/Documents/ranger-pulsar-plugin/target/classes:/Users/kodlien/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/kodlien/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.2/junit-jupiter-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar:/Users/kodlien/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-commons/1.9.2/junit-platform-commons-1.9.2.jar:/Users/kodlien/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.2/junit-jupiter-params-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.2/junit-jupiter-engine-5.9.2.jar:/Users/kodlien/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar:/Users/kodlien/.m2/repository/org/slf4j/slf4j-simple/1.7.36/slf4j-simple-1.7.36.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/kodlien"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.12.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="basedir" value="/Users/kodlien/Documents/ranger-pulsar-plugin"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/kodlien/Documents/ranger-pulsar-plugin/target/surefire/surefirebooter17279451310008537785.jar"/>
+    <property name="user.script" value="Hans"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local|timestamp.apple.com|*.timestamp.apple.com|sequoia.apple.com|*.sequoia.apple.com|seed-sequoia.siri.apple.com|*.seed-sequoia.siri.apple.com"/>
+    <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
+    <property name="user.name" value="kodlien"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/kodlien/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/yt/331j9bm925j4qs7b64r_j1200000gn/T/"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="user.dir" value="/Users/kodlien/Documents/ranger-pulsar-plugin"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="socksProxyPort" value="7890"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/kodlien/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="192.168.0.0/16|*.192.168.0.0/16|10.0.0.0/8|*.10.0.0.0/8|172.16.0.0/12|*.172.16.0.0/12|127.0.0.1|localhost|*.localhost|local|*.local|timestamp.apple.com|*.timestamp.apple.com|sequoia.apple.com|*.sequoia.apple.com|seed-sequoia.siri.apple.com|*.seed-sequoia.siri.apple.com"/>
+    <property name="http.proxyPort" value="7890"/>
+  </properties>
+  <testcase name="testIsAccessAllowedWithLookup" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.281">
+    <system-err><![CDATA[[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-admin', accessType='admin', cluster='standalone', namespace='*', topic='*', users=[admin], groups=[admin-group], priority=100}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-produce', accessType='produce', cluster='standalone', namespace='public/default', topic='*', users=[producer1, admin], groups=[producer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-consume', accessType='consume', cluster='standalone', namespace='public/default', topic='*', users=[admin, consumer1], groups=[consumer-group], priority=50}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Added policy: PolicyModel{id='default-lookup', accessType='lookup', cluster='standalone', namespace='public/default', topic='*', users=[*], groups=[], priority=10}
+[main] INFO com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Loaded 4 default policies
+[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:28.800325Z","event":"ACCESS","result":"GRANTED","user":"any-user","accessType":"lookup","resource":"standalone/public/default/test-topic"}
+]]></system-err>
+  </testcase>
+  <testcase name="testIsAccessAllowedWithProducer" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.001">
+    <system-err><![CDATA[[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:28.865770Z","event":"ACCESS","result":"GRANTED","user":"producer1","accessType":"produce","resource":"standalone/public/default/test-topic"}
+]]></system-err>
+  </testcase>
+  <testcase name="testSingletonInstance" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.001"/>
+  <testcase name="testIsAccessAllowedWithConsumer" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0">
+    <system-err><![CDATA[[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:28.868306Z","event":"ACCESS","result":"GRANTED","user":"consumer1","accessType":"consume","resource":"standalone/public/default/test-topic"}
+]]></system-err>
+  </testcase>
+  <testcase name="testResourceHierarchy" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.01"/>
+  <testcase name="testIsAccessAllowedWithAdminUser" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.001">
+    <system-err><![CDATA[[main] INFO RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:28.883070Z","event":"ACCESS","result":"GRANTED","user":"admin","accessType":"admin","resource":"standalone/public/default/test-topic"}
+]]></system-err>
+  </testcase>
+  <testcase name="testIsAccessAllowedWithUnknownUser" classname="com.apache.ranger.pulsar.RangerPulsarPluginTest" time="0.004">
+    <system-err><![CDATA[[main] WARN RANGER_AUDIT - {"timestamp":"2026-07-17T01:39:28.886939Z","event":"ACCESS","result":"DENIED","user":"unknown-user","accessType":"produce","resource":"standalone/public/default/test-topic"}
+[main] WARN com.apache.ranger.pulsar.plugin.RangerPulsarPlugin - Access denied - user: unknown-user, groups: [], accessType: produce, resource: standalone/public/default/test-topic
+]]></system-err>
+  </testcase>
+</testsuite>
